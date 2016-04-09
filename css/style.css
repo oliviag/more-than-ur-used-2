@@ -1,0 +1,54 @@
+body{
+    background-image: url(img/bg-1.png);
+    background-repeat: repeat;
+    background-color:#eee;}
+
+/* game wrapper maintains 16:9 aspect ratio if padding-bottom is 56.25%*/
+.gameWrapper{
+    position:relative;
+    padding-bottom:65%;
+    background-color: #000;
+    margin: 5% 0 5% 0;}
+
+/* actual game container */
+#gameZone{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    padding:2%;
+    background-color:#fff;
+    border: 3px solid #00ffcc;
+    color: #fea087;
+    overflow: -moz-scrollbars-vertical;
+    overflow: scroll;
+    }
+
+#gameZone button{
+    size:1rem;
+    color: #fea087;
+    background-color: #ffe8e4;
+    border: 1px #fea087 solid;
+}
+
+#gameZone .number {
+    color: #00ffcc;
+    border-right: 1px solid #00ffcc;
+    height:100%;   
+}
+
+#gameZone .number h1{
+    font-size: 10rem;
+    font-weight:800;
+text-align: center;}
+
+#gameZone img{
+    width: 25%;
+    float:left;
+    margin:5rem;}
+
+#gameZone img.fullImage {
+    width:100%;
+    margin: -20px 0px 0px -20px;}
+
+button#nextBtn{
+    float: right;
+}
